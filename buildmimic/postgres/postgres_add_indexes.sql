@@ -73,7 +73,6 @@ CREATE INDEX CALLOUT_IDX02
 -- CHARTEVENTS is built in 10 partitions which are inherited by a single mother table, "CHARTEVENTS"
 -- Therefore, indices need to be added on every single inherited (or partitioned) table.
 
--- index on itemid --
 DROP INDEX IF EXISTS chartevents_1_idx01;
 CREATE INDEX chartevents_1_idx01 ON chartevents_1 (itemid);
 DROP INDEX IF EXISTS chartevents_1_idx02;
