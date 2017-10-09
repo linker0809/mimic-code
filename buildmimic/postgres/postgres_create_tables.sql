@@ -122,8 +122,7 @@ CREATE TABLE chartevents
 	WARNING INT,
 	ERROR INT,
 	RESULTSTATUS VARCHAR(50),
-	STOPPED VARCHAR(50),
-	CONSTRAINT chartevents_rowid_pk PRIMARY KEY (ROW_ID)
+	STOPPED VARCHAR(50)
 ) PARTITION BY RANGE (itemid);
 
 --------------------------------------------------------
