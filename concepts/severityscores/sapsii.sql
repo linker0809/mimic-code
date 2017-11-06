@@ -242,7 +242,7 @@ select
 
   , case
       when tempc_max is null then null
-      when tempc_min <  39.0 then 0
+      when tempc_max <  39.0 then 0
       when tempc_max >= 39.0 then 3
     end as temp_score
 
